@@ -1,0 +1,48 @@
+Idea :
+Imagine we have multiple implementations of the same function
+
+how can we determine which is best
+
+who cares?
+
+prcise voc to talk about how our code work performs
+
+trade --offs between diff approches
+find pain points in our code if code working slow
+it comes up in interviews
+
+what does better mean?
+
+faster?
+less memory-intensive?
+More readable? 
+
+Big O Notation is a way to formalize fuzzy counting
+
+it allow us to talk formally about how the runtime of an algorithm grows as the input grows.
+ 
+
+ constants don't matter
+ O(2n)  O(n)
+ O(13n^2)   O(n^2)
+
+
+ smaller terms don't matter
+
+
+ arth op are constants
+ variable assign is constants
+ access ele in an array(by index) or object is constant 
+
+
+Space complexity
+ when we talk about space complexity, technically we'll be talking about auxiliary space complexity.
+
+ what happens in algorithm
+
+ most primttives booleans numbers undefined null are constants
+
+ strings require O(n) space where is n string length
+
+ ref types are generally O(n), where n is the length(for arrays) or the number of keys(for objects).
+   
