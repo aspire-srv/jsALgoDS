@@ -45,4 +45,14 @@ Space complexity
  strings require O(n) space where is n string length
 
  ref types are generally O(n), where n is the length(for arrays) or the number of keys(for objects).
+
+
+
+ logs complexity
+ log2(8) = 3 -> 2^3 = 8
+
+ log2value = expo = -> 2expo = value
+
+ we'll omit 2
+ log === log2 
    
