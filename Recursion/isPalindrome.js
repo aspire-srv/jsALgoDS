@@ -55,3 +55,21 @@ function someRecursive(array, callback) {
 
 const isGreaterThanTen = val => val => 10;
 console.log(someRecursive([1, 2, 10, 4], isGreaterThanTen)); // true
+
+// flatten 
+// Write a function flatten that takes a nested array (an array that contains arrays)
+//  and returns a new array with all the elements flattened into a single level. 
+// The function should use recursion to handle arrays of arbitrary depth.
+
+function flatten(oldArr){
+  var  newArr = []
+  	for(var i = 0; i < oldArr.length; i++){
+    	if(Array.isArray(oldArr[i])){
+      		newArr = newArr.concat(flatten(oldArr[i]))
+    	} else {
+      		newArr.push(oldArr[i])
+    	}
+  } 
+  return newArr;
+}
+console.log(flatten([1, 2, [3, 4, [5, 6]], 7])); // [1, 2, 3, 4, 5, 6, 7]
